@@ -1,0 +1,29 @@
+{
+	"name": "Google Search as in CN",
+	"description": "Add google gl=cn to your search engines (including search suggestions).",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications":{
+		"gecko": {
+			"id": "google-search-as-in-cn@shansing.com",
+			"strict_min_version": "64.0"
+		}
+	},
+	"developer": {
+		"name": "Shansing",
+		"url": "https://shansing.com"
+	},
+	"icons": {
+		"64": "favicon.png"
+	},
+	"web_accessible_resources": [
+		"favicon.png"
+	],
+  "chrome_settings_overrides": {
+		"search_provider": {
+			"name": "Google CN",
+			"search_url": "https://www.google.com/search?client=firefox-b-d&gl=cn&q={searchTerms}",
+			"suggest_url": "https://www.google.com/complete/search?client=firefox&gl=cn&q={searchTerms}"
+		}
+	}
+}
